@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单计算机</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(u=570008763,3969769601&fm=11&gp=0.jpg);
+}
+body,td,th {
+	font-size: 24px;
+}
+-->
+</style></head>
+<script language="javascript">
+
+document.write("<center>")
+  var one = document.getElementById("t1").value;
+  var two = document.getElementById("t2").value;
+   
+  function times(){
+     var one = document.getElementById("t1").value;
+  var two = document.getElementById("t2").value;
+    document.getElementById("text1").value =Number(one) * Number(two);
+
+  }
+ 
+   function divide(){
+    var one = document.getElementById("t1").value;
+  var two = document.getElementById("t2").value;
+    if(two == "0"){
+        alert("被除数不能为0");
+        document.getElementById("t2").value = "";
+    }
+    document.getElementById("text1").value =Number(one) / Number(two);
+
+  }
+ 
+   function plus(){
+    var one = document.getElementById("t1").value;
+  var two = document.getElementById("t2").value;
+     
+    document.getElementById("text1").value =Number(one) + Number(two);
+
+  }
+ 
+   function minus(){
+    var one = document.getElementById("t1").value;
+  var two = document.getElementById("t2").value;
+     
+    document.getElementById("text1").value =Number(one) - Number(two);
+
+  }
+  </script>
+ </head><body background="u=570008763,3969769601&amp;fm=11&amp;gp=0.jpg">
+
+ <p><em><strong>购物简单计算器</strong></em><br /><br />
+   请输入第一个数：<input id="t1" type="text"/> <br /><br />
+   请输入第二个数：<input id="t2" type="text"/><br /><br />
+   <input id="btn1" type="button" class="tool" onclick="times()" value="×"></input>
+   <input id="btn2" type="button" class="tool" onclick="divide()" value="÷"></input>
+   <input id="btn3" type="button" class="tool" onclick="plus()" value="+"></input>
+   <input id="btn4" type="button" class="tool" onclick="minus()" value="-"></input>    <br /><br />
+   结果：<input id="text1" type="text" class="tool" ></input>
+ </p>
+</body>
+</html>
